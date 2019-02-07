@@ -81,14 +81,14 @@ public class GetCookies extends HttpServlet {
 	      out.println("</UL>");
 	    }
 
-	    // Pregunta si quieren añadirse más productos al carrito o revisarlos.
+	    // Pregunta si quieren añadirse más productos al carrito o revisarlos. (Obviamente, esto no funciona).
 	    out.println("<FORM ACTION=\"/servlet/ShoppingCart\" METHOD=POST>");
 	    out.println("Would you like to<BR>");
 	    out.println("<INPUT TYPE=SUBMIT VALUE=\" Add More Items \">");
 	    out.println("<INPUT TYPE=SUBMIT VALUE=\" Check Out \">");
 	    out.println("</FORM>");
 
-	    // Ofrece una página de ayuda.
+	    // Ofrece una página de ayuda. (Obviamente, esto no funciona).
 	    out.println("For help, click <A HREF=\"/servlet/Help"
 	        + "?topic=ShoppingCartViewerCookie\">here</A>");
 
