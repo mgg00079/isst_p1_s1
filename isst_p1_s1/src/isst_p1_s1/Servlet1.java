@@ -32,7 +32,7 @@ public class Servlet1 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html"); //Le dice al cliente (el navegador web) qué tipo de contenido es para que sepa qué hacer con él.
+		response.setContentType("text/plain"); //Le dice al cliente (el navegador web) qué tipo de contenido es para que sepa qué hacer con él.
 		PrintWriter out = response.getWriter(); //En Servlets, la salida puede ser un caracter o byte. Para datos de caracter (por ejemplo, texto), podemos usar PrintWriter.
 		//PrintWriter: imprime datos de texto en un flujo de caracteres.
 		//getWriter: devuelve un objeto PrintWriter que puede enviar texto en caracteres al cliente.
