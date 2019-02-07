@@ -38,13 +38,13 @@ public class Servlet2 extends HttpServlet {
 		//Aquí empezamos con HTML:
 		String title = "Cabeceras HTTP"; //Definimos un título para la página.
 		out.println("<html>\n" + "<head><title>" + title + "</title></head>\n" + "<body>\n");
-		
 		out.println("<h1>Métodos getHeaderNames y getHeaders</h1>\n" + "<table width=\"100%\" border=\"1\"\n"
 		+ "<tr>\n" + "<th> Nombre cabecera </th><th>Valor cabecera</th>\n" + "</tr>\n");
+		
 		Enumeration<String> names = request.getHeaderNames(); 
 		while (names.hasMoreElements()) { 
 			String name = (String) names.nextElement(); 
-			Enumeration<String> values = request.getHeaders(name);			
+			Enumeration<String> values = request.getHeaders(name); //El <String> lo requiere para que no sea raw data.		
 			if(values != null) { 
 				while(values.hasMoreElements()) { 
 					String value = (String) values.nextElement(); 
